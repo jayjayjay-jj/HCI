@@ -1,0 +1,46 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+hr {
+    width: 90vw;
+    margin: auto;
+    border-top: 2px solid #000000;
+}
+
+#progress-bar {
+    padding: 50px;
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    width: 90vw;
+    margin: auto;
+    transform: translate(0%, -52%);
+}
+
+.circle {
+    border-radius: 50%;
+    height: 5px;
+    width: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #FFFFFF;
+    border: 2px solid #000000;
+}
+
+.active-circle {
+    border-radius: 50%;
+    height: 5px;
+    width: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #000000;
+    border: 2px solid #000000;
+}
+
+.text {
+    transform: translate(0%, 80%);
+}
