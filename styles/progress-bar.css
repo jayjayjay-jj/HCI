@@ -6,7 +6,7 @@
 hr {
     width: 90vw;
     margin: auto;
-    border-top: 2px solid #000000;
+    border-top: 3px solid #000000;
 }
 
 #progress-bar {
@@ -14,35 +14,62 @@ hr {
     display: flex;
     justify-content: space-between;
     position: relative;
-    width: 90vw;
+    width: 92vw;
     margin: auto;
     transform: translate(0%, -52%);
 }
 
 .circle {
     border-radius: 50%;
-    height: 5px;
-    width: 5px;
+    height: 20px;
+    width: 20px;
     display: flex;
     align-items: center;
     justify-content: center;
     background-color: #FFFFFF;
-    border: 2px solid #000000;
+    border: 3px solid #000000;
 }
 
 .active-circle {
     border-radius: 50%;
-    height: 5px;
-    width: 5px;
+    height: 20px;
+    width: 20px;
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: #000000;
-    border: 2px solid #000000;
+    background-color: #FFFFFF;
+    border: 3px solid #38ac5c;
 }
 
-.text {
-    transform: translate(0%, 80%);
+.completed-circle {
+    border-radius: 50%;
+    height: 20px;
+    width: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #FFFFFF;
+    border: 3px solid #000000;
+}
+
+.active-circle .lower-text {
+    color: #38ac5c;
+    font-weight: bold;
+}
+
+.completed-circle .upper-text {
+    transform: translate(0%, 45%);
+}
+
+.upper-text {
+    transform: translate(0%, 50%);
     text-align: center;
     text-size-adjust: auto;
+}
+
+.lower-text {
+    transform: translate(0%, 100%);
+    text-align: center;
+    text-size-adjust: auto;
+    width: 500px;
 }
