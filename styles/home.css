@@ -43,4 +43,6 @@ hr {
 
 .text {
     transform: translate(0%, 80%);
+    text-align: center;
+    text-size-adjust: auto;
 }
