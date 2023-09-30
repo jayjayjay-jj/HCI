@@ -95,3 +95,21 @@ hr {
     text-size-adjust: auto;
     width: 500px;
 }
+
+@media screen and (max-width: 600px) {
+    .circle .lower-text {
+        display: none;
+    }
+
+    .completed-circle .upper-text {
+        transform: translate(0%, 0%);
+    }
+
+    .completed-circle .lower-text {
+        display: none;
+    }
+
+    .circle .upper-text {
+        transform: translate(0%, 0%);
+    }
+}

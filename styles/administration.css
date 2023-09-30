@@ -1,16 +1,15 @@
 .completed-hr {
-    margin-left: 0px;
     position: absolute;
-    width: 45vw;
-    transform: translate(2%, 250%);
+    width: 46vw;
+    transform: translate(0%, 250%);
     z-index: -1000;
     border-top: 3px solid #38ac5c;
 }
 
-hr {
+.uncompleted-hr {
     position: absolute;
     width: 45vw;
-    transform: translate(-8%, 250%);
-    margin-left: 50%;
+    transform: translate(0%, 250%);
+    margin-left: 46vw;
     z-index: -1000;
 }
