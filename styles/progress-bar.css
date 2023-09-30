@@ -7,6 +7,18 @@ hr {
     width: 90vw;
     margin: auto;
     border-top: 3px solid #000000;
+    position: absolute;
+    transform: translate(1%, 250%);
+    z-index: -1000;
+}
+
+.completed-hr {
+    width: 90vw;
+    margin: auto;
+    border-top: 3px solid #38ac5c;
+    position: absolute;
+    transform: translate(1%, 250%);
+    z-index: -1000;
 }
 
 #progress-bar {
@@ -37,7 +49,7 @@ hr {
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: #FFFFFF;
+    background-color: #38ac5c;
     border: 3px solid #38ac5c;
 }
 
@@ -48,8 +60,13 @@ hr {
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: #FFFFFF;
-    border: 3px solid #000000;
+    background-color: #38ac5c;
+    border: 3px solid #38ac5c;
+}
+
+.active-circle .upper-text {
+    color: #FFFFFF;
+    font-weight: bold;
 }
 
 .active-circle .lower-text {
@@ -58,7 +75,12 @@ hr {
 }
 
 .completed-circle .upper-text {
+    color: #FFFFFF;
     transform: translate(0%, 45%);
+}
+
+.completed-circle .lower-text {
+    color: #38ac5c;
 }
 
 .upper-text {
