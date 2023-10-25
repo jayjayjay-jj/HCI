@@ -1,0 +1,23 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+Chorasmian&family=Roboto&display=swap');
+
+* {
+    padding: 0px;
+    margin: 0px;
+    font-family: 'Roboto';
+}
+
+body {
+    background-image: url('../assets/hospital.jpg');
+    background-size: cover;
+}
+
+header {
+    background-color: white;
+    margin-top: 7vh;
+    height: 14vh;
+}
+
+header img {
+    margin: 1vh 0vw 1vh 2.5vw;
+    height: 12vh;
+}

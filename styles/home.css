@@ -1,3 +1,63 @@
-#steps {
-    padding-left: 50px;
+main {
+    padding: 0px;
+    margin: 0px;
+}
+
+#content {
+    margin: auto;
+    margin-top: 10vh;
+    border-radius: 35px 35px 0px 0px;
+    width: 75vw;
+    height: 45vh;
+    background-color: #FFFFFF;
+    text-align: center;
+} 
+
+.content-content {
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.success-icon {
+    width: 3vw;
+    border-radius: 50%;
+    border: 1px solid #BFEBC9;
+}
+
+.failed-icon {
+    width: 3vw;
+    border-radius: 50%;
+    border: 1px solid #F9AAAA;
+}
+
+.queue-number {
+    font-size: 64px;
+}
+
+#confirmation {
+    margin: auto;
+    margin-bottom: 0px;
+    width: 75vw;
+    height: 11.5vh;
+    border-radius: 0px 0px 35px 35px;
+    background-color: #F1F1F1;
+}
+
+.next-button {
+    text-align: center;
+    padding: 1.75vh 0vw;
+}
+
+button {
+    width: 25vw;
+    height: 8vh;
+    background-color: #035B7F;
+    border: none;
+    border-radius: 10px;
+}
+
+a {
+    color: white;
+    text-decoration: none;
 }
