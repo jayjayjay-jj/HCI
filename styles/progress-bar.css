@@ -1,10 +1,5 @@
-* {
-    padding: 0;
-    margin: 0;
-}
-
 hr {
-    width: 90vw;
+    width: 87vw;
     margin: auto;
     border-top: 3px solid #000000;
     position: absolute;
@@ -22,13 +17,12 @@ hr {
 }
 
 #progress-bar {
-    padding: 50px;
     display: flex;
     justify-content: space-between;
     position: relative;
-    width: 92vw;
+    width: 88vw;
     margin: auto;
-    transform: translate(0%, -52%);
+    transform: translate(-2%, -52%);
 }
 
 .circle {
@@ -87,6 +81,7 @@ hr {
     transform: translate(0%, 50%);
     text-align: center;
     text-size-adjust: auto;
+    font-family: 'Times New Roman', Times, serif;
 }
 
 .lower-text {
@@ -94,9 +89,21 @@ hr {
     text-align: center;
     text-size-adjust: auto;
     width: 500px;
+    font-family: 'Times New Roman', Times, serif;
 }
 
 @media screen and (max-width: 600px) {
+    #progress-bar {
+        /* padding: 50px; */
+        display: flex;
+        justify-content: space-between;
+        position: relative;
+        width: 90vw;
+        /* height: 100%; */
+        margin: auto;
+        transform: translate(-8%, -52%);
+    }
+
     .circle .lower-text {
         display: none;
     }

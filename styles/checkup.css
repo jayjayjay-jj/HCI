@@ -1,0 +1,49 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+#jumbotron {
+    margin: auto;
+    margin-top: 3.5vh;
+    width: 95%;
+    overflow: hidden;
+}
+
+.upper {
+    height: 40vh;
+    border-radius: 35px 35px 0px 0px;
+    background-color: #FFFFFF;
+    padding: 10vh;
+}
+
+.text {
+    text-align: center;
+}
+
+.lower {
+    margin: auto;
+    margin-bottom: 0px;
+    width: 95vw;
+    height: 12vh;
+    border-radius: 0px 0px 35px 35px;
+    background-color: #F1F1F1;
+}
+
+.next-button {
+    text-align: center;
+    padding: 1.75vh 0vw;
+}
+
+button {
+    width: 25vw;
+    height: 8vh;
+    background-color: #035B7F;
+    border: none;
+    border-radius: 10px;
+}
+
+a {
+    color: white;
+    text-decoration: none;
+}
