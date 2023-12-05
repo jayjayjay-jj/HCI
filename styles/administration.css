@@ -1,6 +1,6 @@
 .completed-hr {
     position: absolute;
-    width: 46vw;
+    width: 44vw;
     transform: translate(0%, 250%);
     z-index: -1000;
     border-top: 3px solid #38ac5c;
@@ -8,8 +8,9 @@
 
 .uncompleted-hr {
     position: absolute;
-    width: 45vw;
-    transform: translate(0%, 250%);
-    margin-left: 46vw;
+    width: 42.5vw;
+    transform: translate(0%, 100%);
+    margin-left: 44vw;
     z-index: -1000;
+    border-top: 3px solid #000000;
 }

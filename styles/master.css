@@ -12,12 +12,98 @@ body {
 }
 
 header {
+    display: flex;
+    flex-direction: row;
     background-color: white;
     margin-top: 7vh;
     height: 14vh;
+    width: 100vw;
 }
 
 header img {
     margin: 1vh 0vw 1vh 2.5vw;
     height: 12vh;
 }
+
+.right-header {
+    display: flex;
+    flex-direction: column;
+    width: 88vw;
+    right: 0;
+    text-align: right;
+    justify-content: center;
+    color: #348ECA;
+}
+
+footer {
+    display: flex;
+    flex-direction: column;
+    background-color: #002230;
+    color: #FFFFFF;
+    margin-top: 10vh;
+    padding: 5vh 2vw;
+}
+
+footer img {
+    width: 95px;
+    height: auto;
+}
+
+.upper-footer {
+    display: flex;
+    flex-direction: row;
+}
+
+#upper-left-footer {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 70vw;
+}
+
+#upper-left-footer p {
+    margin-left: 15px;
+}
+
+.text-logo {
+    font-family: 'Snippet';
+    font-size: 20px;
+}
+
+#upper-right-footer {
+    display: flex;
+    flex-direction: row;
+}
+
+.footer-list {
+    display: flex;
+    flex-direction: column;
+    row-gap: 10px;
+    width: 20vw;
+}
+
+.navigation-text {
+    width: 50%;
+    text-decoration: underline;
+}
+
+.footer-line {
+    margin: 15px 0px;
+}
+
+.lower-footer {
+    display: flex;
+    flex-direction: row;
+}
+
+#lower-left-footer {
+    width: 70vw;
+}
+
+#lower-right-footer {
+    display: flex;
+    flex-direction: row;
+    column-gap: 25px;
+    font-size: 14px;
+}
+

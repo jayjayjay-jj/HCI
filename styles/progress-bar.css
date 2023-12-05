@@ -1,4 +1,4 @@
-hr {
+.progress-line {
     width: 87vw;
     margin: auto;
     border-top: 3px solid #000000;
@@ -8,7 +8,7 @@ hr {
 }
 
 .completed-hr {
-    width: 90vw;
+    width: 87vw;
     margin: auto;
     border-top: 3px solid #38ac5c;
     position: absolute;

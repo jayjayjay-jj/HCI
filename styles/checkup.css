@@ -47,3 +47,22 @@ a {
     color: white;
     text-decoration: none;
 }
+
+.information-section {
+    margin: 5vh 0vw;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    column-gap: 5vw;
+}
+
+.information-section p {
+    font-size: 25px;
+    text-align: center;
+}
+
+.information-section img {
+    border-radius: 20px;
+    width: 250px;
+}

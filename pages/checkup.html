@@ -11,14 +11,24 @@
 </head>
 <body>
     <header>
-        <img src="../assets/logo.png" alt="Logo not found">
+        <img src="../assets/hospital_logo.png" alt="Logo not found">
+
+        <div class="right-header">
+            <div class="upper-right-header">
+                <p>Nomor Antrian Anda</p>
+            </div>
+            
+            <div class="lower-right-header">
+                <h1>A203</h3>
+            </div>
+        </div>
     </header>
     
     <main>
         <div id="jumbotron">
             <div class="upper">
                 <div id="progress-bar">
-                    <hr>
+                    <hr class="progress-line">
                     
                     <div class="active-circle">
                         <div class="text">
@@ -82,8 +92,13 @@
                 </div>    
                 
                 <div class="text">
-                    <br><br><br><br><br>
+                    <br><br><br>
                     <p>Silakan pergi ke bilik checkup yang terletak di depan poliklinik masing-masing.</p>
+
+                    <div class="information-section">
+                        <p>Lantai 1 (Gedung A)</p>
+                        <img src="../assets/checkup.jpg" alt="Image not found">
+                    </div>
                 </div>
             </div>
 
@@ -91,7 +106,7 @@
                 <div class="next-button">
                     <button>
                         <a href="./doctor.html" class="next-button-link">
-                            <h1>SAYA SUDAH CHECKUP</h1>
+                            <h2>SAYA SUDAH CHECKUP</h2>
                         </a>
                     </button>
                 </div>
@@ -100,7 +115,43 @@
     </main>
 
     <footer>
+        <div class="upper-footer">
+            <div id="upper-left-footer">
+                <div class="footer-logo">
+                    <img src="../assets/logo.png" alt="Logo Not Found">
+                </div>
 
+                <div class="footer-text-logo">
+                    <p class="text-logo">AppointDoc</p>
+                    <p>Penyedia layanan pihak ketiga</p>
+                    <p>untuk memberi solusi pada</p>
+                    <p>rumah sakit Anda</p>
+                </div>
+            </div>
+
+            <div id="upper-right-footer">
+                <p class="navigation-text">Navigasi :</p>
+
+                <div class="footer-list">
+                    <p>Tentang AppointDoc</p>
+                    <p>Partner Kerjasama</p>
+                    <p>Hubungi Kami</p>
+                </div>
+            </div>
+        </div>
+
+        <hr class="footer-line">
+
+        <div class="lower-footer">
+            <div id="lower-left-footer">
+                <p>© 2023 AppointDoc. Penyedia layanan pihak ketiga. Hak cipta dilindungi.</p>
+            </div>
+
+            <div id="lower-right-footer">
+                <p>Privasi & Kebijakan</p>
+                <p>Syarat & Ketentuan</p>
+            </div>
+        </div>
     </footer>
 </body>
 </html>

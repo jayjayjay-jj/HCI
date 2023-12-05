@@ -28,7 +28,7 @@ main {
 .failed-icon {
     width: 3vw;
     border-radius: 50%;
-    border: 1px solid #F9AAAA;
+    /* border: 1px solid #F9AAAA; */
 }
 
 .queue-number {
