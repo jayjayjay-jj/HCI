@@ -95,6 +95,21 @@
                 </div>    
                 
                 <div class="text">
+                    <img src="../../assets/success.png" alt="Not Found" class="success-icon">
+                    <h1>Pembayaran Berhasil</h1>
+                    <p>Mohon menunggu obat yang sedang kami siapkan</p>
+                    <table style="width: 200px;">
+                      <tr style="font-size: 50px; font-weight: bold;">
+                        <th id="minutes">30</th>
+                        <th id="seconds">00</th>
+                      </tr>
+                      <tr>
+                        <td>minutes</td>
+                        <td>seconds</td>
+                      </tr>
+                    </table>
+
+                    <p>terdapat 5 antrian di depan anda.</p>
                 
                 </div>
             </div>
@@ -146,4 +161,39 @@
         </div>
     </footer>
 </body>
+<script>
+  // Set the countdown time in minutes
+  const countdownTime = 30;
+
+  // Calculate the end time
+  const endTime = new Date();
+  endTime.setMinutes(endTime.getMinutes() + countdownTime);
+
+  // Update the countdown every second
+  const minutesElement = document.getElementById('minutes');
+  const secondsElement = document.getElementById('seconds');
+
+  function updateCountdown() {
+    const currentTime = new Date();
+    const remainingTime = endTime - currentTime;
+
+    if (remainingTime <= 0) {
+      minutesElement.innerHTML = '00';
+      secondsElement.innerHTML = '00';
+    } else {
+      const minutes = Math.floor(remainingTime / (1000 * 60));
+      const seconds = Math.floor((remainingTime % (1000 * 60)) / 1000);
+
+      // Display leading zero for single-digit minutes and seconds
+      minutesElement.innerHTML = (minutes < 10) ? `0${minutes}` : minutes;
+      secondsElement.innerHTML = (seconds < 10) ? `0${seconds}` : seconds;
+    }
+  }
+
+  // Initial update
+  updateCountdown();
+
+  // Update every second
+  setInterval(updateCountdown, 1000);
+</script>
 </html>
