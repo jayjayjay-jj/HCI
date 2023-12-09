@@ -1,0 +1,103 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+.completed-hr {
+    margin-left: 0px;
+    position: absolute;
+    width: 60vw;
+    transform: translate(2%, 250%);
+    z-index: -1000;
+    border-top: 3px solid #38ac5c;
+}
+
+.uncompleted-hr {
+    position: absolute;
+    width: 65vw;
+    transform: translate(0%, 100%);
+    margin-left: 22.5vw;
+    z-index: -1000;
+    border-top: 3px solid #000000;
+}
+
+#jumbotron {
+    margin: auto;
+    margin-top: 3.5vh;
+    width: 95%;
+    overflow: hidden;
+}
+
+.upper {
+    height: 40vh;
+    border-radius: 35px 35px 0px 0px;
+    background-color: #FFFFFF;
+    padding: 10vh 10vw;
+}
+
+.text {
+    text-align: center;
+}
+
+.lower {
+    margin: auto;
+    margin-bottom: 0px;
+    width: 95vw;
+    height: 12vh;
+    border-radius: 0px 0px 35px 35px;
+    background-color: #F1F1F1;
+}
+
+.next-button {
+    text-align: center;
+    padding: 1.75vh 0vw;
+}
+
+button {
+    width: 25vw;
+    height: 8vh;
+    background-color: #035B7F;
+    border: none;
+    border-radius: 10px;
+}
+
+a {
+    color: white;
+    text-decoration: none;
+}
+
+.container {
+    display: flex;
+    flex-direction: row;
+    width: 30vw;
+    height: 70%;
+    margin: auto;
+    margin-top: 7.5vh;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.25);
+    border-radius: 30px;
+    justify-content: center;
+    align-items: center;
+    padding: 3vh 2vw;
+}
+
+.information-section {
+    width: 70%;
+    height: 90%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.medicine-queue {
+    color:#035B7F;
+}
+
+.queue-number h3{
+    line-height: 35px;
+}
+
+.line {
+    border-top: 3px solid #035B7F;
+    width: 90%;
+}
