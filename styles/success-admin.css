@@ -65,3 +65,19 @@ a {
     color: white;
     text-decoration: none;
 }
+
+.success-icon{
+    width: 50px;
+}
+
+.text{
+    padding-top: 200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.text *{
+    padding-bottom: 10px;
+}
