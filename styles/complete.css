@@ -3,24 +3,6 @@
     margin: 0;
 }
 
-.completed-hr {
-    margin-left: 0px;
-    position: absolute;
-    width: 45vw;
-    transform: translate(3%, 250%);
-    z-index: -1000;
-    border-top: 3px solid #38ac5c;
-}
-
-.uncompleted-hr {
-    position: absolute;
-    width: 65vw;
-    transform: translate(0%, 100%);
-    margin-left: 22.5vw;
-    z-index: -1000;
-    border-top: 3px solid #000000;
-}
-
 #jumbotron {
     margin: auto;
     margin-top: 3.5vh;
@@ -36,7 +18,11 @@
 }
 
 .text {
+    display: flex;
+    flex-direction: column;
     text-align: center;
+    justify-content: center;
+    height: 100%;
 }
 
 .lower {

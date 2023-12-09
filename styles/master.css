@@ -1,5 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+Chorasmian&family=Roboto&display=swap');
 
+::-webkit-scrollbar {
+    display: none;
+}
+
 * {
     padding: 0px;
     margin: 0px;
@@ -15,7 +19,8 @@ header {
     display: flex;
     flex-direction: row;
     background-color: white;
-    margin-top: 7vh;
+    margin-top: 0;
+    margin-bottom: 10vh;
     height: 14vh;
     width: 100vw;
 }
@@ -36,8 +41,10 @@ header img {
 }
 
 footer {
+    position: relative;
     display: flex;
     flex-direction: column;
+    bottom: 0;
     background-color: #002230;
     color: #FFFFFF;
     margin-top: 10vh;
@@ -58,7 +65,7 @@ footer img {
     display: flex;
     flex-direction: row;
     align-items: center;
-    width: 70vw;
+    width: 67vw;
 }
 
 #upper-left-footer p {

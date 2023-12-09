@@ -14,11 +14,65 @@
     height: 40vh;
     border-radius: 35px 35px 0px 0px;
     background-color: #FFFFFF;
-    padding: 10vh;
+    padding: 10vh 10vw;
 }
 
 .text {
+    width: 50vw;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+}
+
+.title {
     text-align: center;
+    color: #348ECA;
+}
+
+.patient-section {
+    display: flex;
+    flex-direction: row;
+    margin: auto;
+}
+
+.left-patient {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+}
+
+.right-patient {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+}
+
+.checkup-section {
+    display: flex;
+    flex-direction: row;
+    margin: auto;
+}
+
+.left-checkup {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+}
+
+.right-checkup {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+}
+
+.warn-detail-information {
+    font-size: 12px;
+    color: #FF0000;
+}
+
+.okay-detail-information {
+    font-size: 12px;
+    color: #38AC5C;
 }
 
 .lower {
@@ -46,23 +100,4 @@ button {
 a {
     color: white;
     text-decoration: none;
-}
-
-.information-section {
-    margin: 5vh 0vw;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    column-gap: 5vw;
-}
-
-.information-section p {
-    font-size: 25px;
-    text-align: center;
-}
-
-.information-section img {
-    border-radius: 20px;
-    width: 250px;
 }

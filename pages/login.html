@@ -5,56 +5,45 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Snippet&display=swap" rel="stylesheet">
-
-    <link rel="stylesheet" href="../styles/home.css" >
     <link rel="stylesheet" href="../styles/master.css">
+    <link rel="stylesheet" href="../styles/progress-bar.css" >
+    <link rel="stylesheet" href="../styles/login.css" >
 </head>
 <body>
-    <header>
+    <header>    
         <img src="../assets/hospital_logo.png" alt="Logo not found">
     </header>
-
+    
     <main>
         <div id="jumbotron">
             <div id="content">
                 <div class="content-content">
-                    <div class="success">
-                        <div>
-                            <img src="../assets/failed.png" alt="Not Found" class="failed-icon">
+                    <div class="form">
+                        <div class="login">
+                            <div class="masuk">
+                                <h1>Masuk</h1>
+                                <br>
+                            </div>
+                        <!-- <form name="myForm" action="#" onsubmit="onSubmit()" method="get"> -->
+                            <div class="formInput">
+                                <!-- <label for="kodeReg" >Masukkan kode registrasi yang diberikan</label>
+                                <br> -->
+                                <h1 for="kodeReg" class="label">Masukkan kode registrasi yang diberikan</h1>
+                                <input name="Fkode" type="text">
+                            </div>
                         </div>
-                            
-                        <div class="success-text">
-                            <h3><b>Failed</b></h3>
-    
-                            <p>QR Anda gagal. Mohon untuk mencoba lagi</p>
+                        <div id="confirmation">
+                            <div class="submit">
+                                <button type="submit">
+                                    <a href="./checkup.html" class="next-button-link">
+                                        <!-- <input type="submit" value="KONFIRMASI"> -->
+                                        <h2>KONFIRMASI</h2>
+                                    </a>
+                                </button>
+                            </div>
                         </div>
+                        </form>
                     </div>
-    
-                    <br>
-                    <br>
-    
-                    <div class="number">
-                        <p>Nomor Antrian Anda adalah</p>
-    
-                        <p class="queue-number">
-                            -
-                        </p>
-    
-                        <p>JIka mendapat nomor antrian yang tidak sesuai, mohon hubungi customer service.</p>
-                    </div>
-                </div>
-            </div>
-
-            <div id="confirmation">
-                <div class="next-button">
-                    <button>
-                        <a href="./home.html" class="next-button-link">
-                            <h2>KONFIRMASI</h2>
-                        </a>
-                    </button>
                 </div>
             </div>
         </div>
@@ -91,11 +80,6 @@
         <div class="lower-footer">
             <div id="lower-left-footer">
                 <p>© 2023 AppointDoc. Penyedia layanan pihak ketiga. Hak cipta dilindungi.</p>
-            </div>
-
-            <div id="lower-right-footer">
-                <p>Privasi & Kebijakan</p>
-                <p>Syarat & Ketentuan</p>
             </div>
         </div>
     </footer>

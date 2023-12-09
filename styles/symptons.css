@@ -6,8 +6,8 @@
 .completed-hr {
     margin-left: 0px;
     position: absolute;
-    width: 45vw;
-    transform: translate(3%, 250%);
+    width: 15vw;
+    transform: translate(5%, 250%);
     z-index: -1000;
     border-top: 3px solid #38ac5c;
 }
@@ -64,4 +64,31 @@ button {
 a {
     color: white;
     text-decoration: none;
+}
+
+.checklist-container {
+    width: 70%;
+    margin: auto;
+}
+
+.container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.checklist {
+    display: flex;
+    flex-direction: row;
+    column-gap: 8px;
+}
+
+.filled-checkbox {
+    accent-color: #FF0000;
+}
+
+.inputted {
+    border-top: #000000;
+    border-left: #000000;
+    border-right: #000000;
 }

@@ -6,92 +6,144 @@
     <title>Document</title>
 
     <link rel="stylesheet" href="../styles/progress-bar.css" >
+    <link rel="stylesheet" href="../styles/master.css">
     <link rel="stylesheet" href="../styles/administration.css" >
 </head>
 <body>
     <header>
-
+        <img src="../assets/hospital_logo.png" alt="Logo not found">
     </header>
     
     <main>
-        <br>
-
-        <div id="progress-bar">
-            <hr class="completed-hr">
-            <hr class="uncompleted-hr">
-
-            <div class="completed-circle">
-                <div class="text">
-                    <div class="upper-text">
-                        &#10004; 
-                    </div>
+        <div id="jumbotron">
+            <div class="upper">
+                <div id="progress-bar">
+                    <hr class="progress-line">
+                    <hr class="completed-hr">
                     
-                    <div class="lower-text">
-                        Checkup
+                    <div class="completed-circle">
+                        <div class="text">
+                            <div class="upper-text">
+                                &#10004; 
+                            </div>
+                            
+                            <div class="lower-text">
+                                Pemeriksaan
+                            </div>
+                        </div>
                     </div>
-                </div>
-            </div>
-
-            <div class="completed-circle">
+        
+                    <div class="completed-circle">
+                        <div class="text">
+                            <div class="upper-text">
+                                &#10004;
+                            </div>
+            
+                            <div class="lower-text">
+                                Keluhan
+                            </div>
+                        </div>
+                    </div>
+        
+                    <div class="completed-circle">
+                        <div class="text">
+                            <div class="upper-text">
+                                &#10004;
+                            </div>
+            
+                            <div class="lower-text">
+                                Janji Temu Dokter
+                            </div>
+                        </div>
+                    </div>
+        
+                    <div class="active-circle">
+                        <div class="text">
+                            <div class="upper-text">
+                                4
+                            </div>
+            
+                            <div class="lower-text">
+                                Administrasi
+                            </div>
+                        </div>
+                    </div>
+        
+                    <div class="circle">
+                        <div class="text">
+                            <div class="upper-text">
+                                5
+                            </div>
+            
+                            <div class="lower-text">
+                                Obat
+                            </div>
+                        </div>
+                    </div>
+                
+                    <div class="circle">
+                        <div class="text">
+                            <div class="upper-text">
+                                6
+                            </div>
+            
+                            <div class="lower-text">
+                                Selesai
+                            </div>
+                        </div>
+                    </div>
+                </div>    
+                
                 <div class="text">
-                    <div class="upper-text">
-                        &#10004; 
-                    </div>
-    
-                    <div class="lower-text">
-                        Doctor's Appoinment
-                    </div>
+                
                 </div>
             </div>
 
-            <div class="active-circle">
-                <div class="text">
-                    <div class="upper-text">
-                        3
-                    </div>
-    
-                    <div class="lower-text">
-                        Administration
-                    </div>
+            <div class="lower">
+                <div class="next-button">
+                    <button>
+                        <a href="./administration/failed-admin.html" class="next-button-link">
+                            <h2>SAYA SUDAH BAYAR</h2>
+                        </a>
+                    </button>
                 </div>
             </div>
-
-            <div class="circle">
-                <div class="text">
-                    <div class="upper-text">
-                        4
-                    </div>
-    
-                    <div class="lower-text">
-                        Medicine
-                    </div>
-                </div>
-            </div>
-
-            <div class="circle">
-                <div class="text">
-                    <div class="upper-text">
-                        5
-                    </div>
-    
-                    <div class="lower-text">
-                        Completed
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <div id="next-button">
-            <button class="next-button">
-                <a href="./medicine.html" class="next-button-link">
-                    Next
-                </a>
-            </button>
         </div>
     </main>
 
     <footer>
+        <div class="upper-footer">
+            <div id="upper-left-footer">
+                <div class="footer-logo">
+                    <img src="../assets/logo.png" alt="Logo Not Found">
+                </div>
 
+                <div class="footer-text-logo">
+                    <p class="text-logo">AppointDoc</p>
+                    <p>Penyedia layanan pihak ketiga</p>
+                    <p>untuk memberi solusi pada</p>
+                    <p>rumah sakit Anda</p>
+                </div>
+            </div>
+
+            <div id="upper-right-footer">
+                <p class="navigation-text">Kontak Kami :</p>
+
+                <div class="footer-list">
+                    <p>AppointDoc@gmail.com</p>
+                    <p>0881-1234-5678</p>
+                    <p>Jl. Anggrek No. 8, Jakarta Barat</p>
+                </div>
+            </div>
+        </div>
+
+        <hr class="footer-line">
+
+        <div class="lower-footer">
+            <div id="lower-left-footer">
+                <p>© 2023 AppointDoc. Penyedia layanan pihak ketiga. Hak cipta dilindungi.</p>
+            </div>
+        </div>
     </footer>
 </body>
 </html>
