@@ -64,4 +64,24 @@ button {
 a {
     color: white;
     text-decoration: none;
+<<<<<<< Updated upstream
+=======
+}
+
+.success-icon{
+    width: 3vw;
+}
+
+.section-text{
+    padding-top: 5vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.section-text *{
+    padding-bottom: 10px;
+>>>>>>> Stashed changes
 }
