@@ -3,15 +3,26 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Pembayaran Berhasil</title>
 
     <link rel="stylesheet" href="../../styles/progress-bar.css" >
     <link rel="stylesheet" href="../../styles/master.css">
     <link rel="stylesheet" href="../../styles/success-admin.css" >
+    <link rel="icon" type="image/x-icon" href="../../assets/logo.png">
 </head>
 <body>
     <header>
         <img src="../../assets/hospital_logo.png" alt="Logo not found">
+
+        <div class="right-header">
+            <div class="upper-right-header">
+                <p>Nomor Antrian Anda</p>
+            </div>
+            
+            <div class="lower-right-header">
+                <h1>A203</h3>
+            </div>
+        </div>
     </header>
     
     <main>
@@ -161,4 +172,39 @@
         </div>
     </footer>
 </body>
+<script>
+    // Set the countdown time in minutes
+    const countdownTime = 30;
+
+    // Calculate the end time
+    const endTime = new Date();
+    endTime.setMinutes(endTime.getMinutes() + countdownTime);
+
+    // Update the countdown every second
+    const minutesElement = document.getElementById('minutes');
+    const secondsElement = document.getElementById('seconds');
+
+    function updateCountdown() {
+        const currentTime = new Date();
+        const remainingTime = endTime - currentTime;
+
+    if (remainingTime <= 0) {
+    minutesElement.innerHTML = '00';
+    secondsElement.innerHTML = '00';
+    } else {
+        const minutes = Math.floor(remainingTime / (1000 * 60));
+        const seconds = Math.floor((remainingTime % (1000 * 60)) / 1000);
+
+        // Display leading zero for single-digit minutes and seconds
+        minutesElement.innerHTML = (minutes < 10) ? `0${minutes}` : minutes;
+        secondsElement.innerHTML = (seconds < 10) ? `0${seconds}` : seconds;
+        }
+    }
+
+    // Initial update
+    updateCountdown();
+
+    // Update every second
+    setInterval(updateCountdown, 1000);
+</script>
 </html>
