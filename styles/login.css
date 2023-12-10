@@ -43,17 +43,13 @@ button {
     border-radius: 10px;
 }
 
-.kodeTxt {
-
-}
-
 .login {
     border-radius: 35px 35px 0px 0px;
         background-color: #FFFFFF;
         padding: 5vh 2vh;
 }
 
-a {
+.confirmBtn {
     color: white;
     text-decoration: none;
 }

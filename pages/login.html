@@ -3,12 +3,35 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Masuk</title>
+    <link rel="icon" type="image/x-icon" href="../assets/logo.png">
 
     <link rel="stylesheet" href="../styles/master.css">
     <link rel="stylesheet" href="../styles/progress-bar.css" >
     <link rel="stylesheet" href="../styles/login.css" >
 </head>
+<script>
+    function validateKode(event){
+        event.preventDefault();
+        let str = document.getElementById('kodeTxt').value;
+        let arr = str.split('');
+        let status = false;
+
+        if(str.length === 0 || str.length < 8 || str.length > 8){
+            window.alert("Masukkan kode registrasi dengan benar!");
+            return status;
+        } else{
+            const regex = new RegExp('^[0-9]+$');
+            if(arr.length === 8 && arr[0] === 'Y' && arr[1] === 'L' && arr[2] === 'J' && regex.test(arr[3]) && regex.test(arr[4]) && regex.test(arr[5]) && regex.test(arr[6]) && regex.test(arr[7])){
+                status = true;
+                window.location.href = './checkup.html';
+            } else {
+                window.alert("Masukkan kode registrasi dengan benar!");
+                return status;
+            }
+        }
+    }
+</script>
 <body>
     <header>    
         <img src="../assets/hospital_logo.png" alt="Logo not found">
@@ -24,21 +47,20 @@
                                 <h1>Masuk</h1>
                                 <br>
                             </div>
-                        <!-- <form name="myForm" action="#" onsubmit="onSubmit()" method="get"> -->
+                        <form name="myForm" action="#" onsubmit="return validateKode(event)" method="get">
                             <div class="formInput">
-                                <!-- <label for="kodeReg" >Masukkan kode registrasi yang diberikan</label>
-                                <br> -->
                                 <h1 for="kodeReg" class="label">Masukkan kode registrasi yang diberikan</h1>
-                                <input name="Fkode" type="text">
+                                <input name="Fkode" id="kodeTxt" type="text">
                             </div>
                         </div>
                         <div id="confirmation">
                             <div class="submit">
                                 <button type="submit">
-                                    <a href="./checkup.html" class="next-button-link">
-                                        <!-- <input type="submit" value="KONFIRMASI"> -->
+                                    <!-- <a href="./checkup.html" class="next-button-link">
+                                        <input type="submit" value="KONFIRMASI">
                                         <h2>KONFIRMASI</h2>
-                                    </a>
+                                    </a> -->
+                                    <h2 class="confirmBtn">KONFIRMASI</h2>
                                 </button>
                             </div>
                         </div>
