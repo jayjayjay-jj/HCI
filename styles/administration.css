@@ -72,28 +72,29 @@ a {
 }
 
 table{
-    width: 70%;
+    width: 75%;
     border-collapse: collapse;
     margin: auto;
 }
 
 .Judul{
     text-align: left;
-    padding:5px;
-    border-bottom: 2px solid #000000;
+    padding:10px;
+    border-bottom: 5px solid #000000;
     font-weight: bolder;
+    font-size: large;
     
 }
 
 .Rincian{
     text-align: left;
-    font-size: xx-small;
-    padding:5px;
+    font-size: medium;
+    padding:7px;
 }
 
 .Total{
     text-align: left;
-    font-size: small;
+    font-size: large;
     font-weight: bold;
-    border-top: 2px solid #000000;
+    border-top: 4px solid #000000;
 }
