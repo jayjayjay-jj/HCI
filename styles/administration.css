@@ -66,35 +66,38 @@ a {
     text-decoration: none;
 }
 
-.Invoice{
-  width: 70px auto;
-  margin: 70px auto;
+.invoice{
+    width: 100% auto;
+    margin: 70px auto;
+    text-align: center;
 }
 
 table{
-    width: 75%;
+    width: 100%;
     border-collapse: collapse;
     margin: auto;
+    text-align: center;
+    justify-content: space-between;
 }
 
-.Judul{
-    text-align: left;
-    padding:10px;
-    border-bottom: 5px solid #000000;
+table td {
+    width: 50%;
+}
+
+.judul{
     font-weight: bolder;
     font-size: large;
-    
+    text-align: center;
 }
 
-.Rincian{
+.rincian{
     text-align: left;
     font-size: medium;
-    padding:7px;
+    text-align: center;
 }
 
-.Total{
-    text-align: left;
+.total{
     font-size: large;
     font-weight: bold;
-    border-top: 4px solid #000000;
+    text-align: center;
 }

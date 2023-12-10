@@ -65,3 +65,21 @@ a {
     color: white;
     text-decoration: none;
 }
+
+.failed-icon{
+    width: 3vw;
+}
+
+.section-text{
+    padding-top: 5vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    height: 80%;
+}
+
+.section-text p {
+    padding-top: 8vh;
+}
